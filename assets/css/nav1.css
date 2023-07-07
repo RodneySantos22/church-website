@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans serif;
+}
+.background{
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 50%;
+}
+/*--nav bar--*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+}
+.logo{
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 1000;
+    margin-left: 80px;
+}
+.navigation a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.sir{
+    border-radius: 100px;
+    left: 200px;
+    margin-top: -8px;
+}
+header .btnLogOut{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .5s;
+}
+header .btnLogOut:hover{
+    background: #fff;
+    color: #162938;
+}
+
+*{
+    padding: 500;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+footer{
+    padding: 80px 5% 10px;
+}
+.paa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.1rem;
+    background: #1a242f;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    justify-content: center;
+    padding-top: 20px;
+}
+.donate-button {
+    background-color: #add8e6;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.footer-content{
+    text-align: center;
+}
+.give{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
